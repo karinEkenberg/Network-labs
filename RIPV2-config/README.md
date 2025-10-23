@@ -14,7 +14,7 @@ LAN: 192.168.1.0/24 LAN: 192.168.3.0/24
 - Verify that routes are learned dynamically  
 - Ensure version 2 is used (not RIPv1)
 
-## 🖧 IP Addressing Plan
+##  IP Addressing Plan
 | Link / Network | R1 | R2 | R3 |
 |----------------|----|----|----|
 | R1–R2 | 192.168.12.1 | 192.168.12.2 | — |
@@ -24,7 +24,7 @@ LAN: 192.168.1.0/24 LAN: 192.168.3.0/24
 
 Subnet mask: 255.255.255.0 (/24)
 
-## ⚙️ Configuration Example
+##  Configuration Example
 R1(config)# router rip
 
 R1(config-router) version 2
@@ -53,7 +53,7 @@ R1(config-router) network 192.168.12.0
 - **R1 → R3 LAN (192.168.3.1)**: 0% ping success
 - **R1 → R2-R3 link (192.168.12.3)**: 0% ping success
 
-## 🔍 Analysis & Findings
+##  Analysis & Findings
 
 ### What's Working
 - **Direct link routing** between R1-R2 and R2-R3 is functional
@@ -66,11 +66,11 @@ Based on the connectivity pattern, I suspect:
 2. **Incomplete RIP configuration** on R2 or R3
 3. **Interface or routing problems** on R3's LAN interface
 
-## 🛠️ Troubleshooting Steps Performed
+##  Troubleshooting Steps Performed
 
 Här är en strukturerad command table med förklaringar av alla dina kommandon:
 
-## 📋 Command Reference Table
+##  Command Reference Table
 
 | Command | Mode | Description | Purpose |
 |---------|------|-------------|---------|
@@ -108,3 +108,4 @@ R1# show ip protocols
 ---
 
 _All configurations are for educational use only._
+
