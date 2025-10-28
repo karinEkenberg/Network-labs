@@ -4,6 +4,9 @@ This README summarizes the configuration steps for implementing a **Router-on-a-
 
 ## Topology Overview
 
+<img width="756" height="621" alt="router-on-a-stick" src="https://github.com/user-attachments/assets/e51e69d3-23ce-419f-96be-e63128539515" />
+
+
 The lab utilizes the Router-on-a-Stick principle to allow communication between three segmented VLANs using only one physical link (trunk) between the Switch and the Router9, 10. The router acts as the default gateway for each VLAN via logical sub-interfaces10.
 
 | VLAN ID | VLAN Name | Network (CIDR) | Sub-Network ID | Default Gateway (R1 Sub-interface) |
@@ -72,3 +75,4 @@ After the configuration, Inter-VLAN communication was verified by successful Pin
 | `show ip protocols` (R1) | Confirms EIGRP AS 100 is running and the networks are being advertised. |
 
 ---
+
