@@ -1,6 +1,5 @@
 # Lab 3: Multi-Area OSPF Configuration
-
-<img width="575" height="204" alt="multi-area" src="https://github.com/user-attachments/assets/25ffc9cf-85e4-4890-8317-a1d04932ae21" />
+<img width="570" height="204" alt="multi-area" src="https://github.com/user-attachments/assets/1d90a7e6-45bb-4e03-9f1c-9edddc965ed1" />
 
 This project demonstrates the configuration of a multi-area OSPF (Open Shortest Path First) network. The primary goal is to segment a simple OSPF domain into two areas (Area 0 and Area 1) to improve scalability, reduce Link-State Database (LSDB) size, and manage routing updates more efficiently.
 
