@@ -176,6 +176,14 @@ OSPF events debugging is on
 ...
 ```
 
+### Best Practice: Using a Stable Router-ID
+
+A highly recommended practice in any OSPF deployment is to use a Loopback interface to define the Router-ID (RID).
+
+In this lab, R2's RID was automatically selected as 192.168.1.2, the IP of a physical interface. This is not ideal, as it can be confusing in outputs (as seen in show ip ospf database) and can cause network instability if that physical interface goes down, forcing the router to select a new RID.
+
+By creating a Loopback interface (e.g., interface Loopback0 with IP 2.2.2.2 255.255.255.255) and manually setting it with the router-id 2.2.2.2 command, you create a stable, predictable ID that always represents the router itself, regardless of the state of its physical links.
+
 ## Key Concepts
 
 > OSPF areas are used to divide a large autonomous system into smaller, more manageable domains. This reduces the size of the Link-State Database (LSDB) on each router and minimizes the overhead of SPF (Shortest Path First) calculations. The **Area Border Router (ABR)**, R2 in this lab, connects different areas and is responsible for summarizing routes. All inter-area communication must pass through the backbone, **Area 0**.
