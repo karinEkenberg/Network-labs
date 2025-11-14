@@ -1,5 +1,7 @@
 # Lab 3: Multi-Area OSPF Configuration
 
+<img width="575" height="204" alt="multi-area" src="https://github.com/user-attachments/assets/25ffc9cf-85e4-4890-8317-a1d04932ae21" />
+
 This project demonstrates the configuration of a multi-area OSPF (Open Shortest Path First) network. The primary goal is to segment a simple OSPF domain into two areas (Area 0 and Area 1) to improve scalability, reduce Link-State Database (LSDB) size, and manage routing updates more efficiently.
 
 ## Learning Objectives
@@ -11,7 +13,9 @@ This project demonstrates the configuration of a multi-area OSPF (Open Shortest 
 - Establish an **Area Border Router (ABR)** that connects the two areas.
     
 - Verify inter-area routing and inspect the OSPF database.
-    
+
+
+
 
 ## topology Network Topology
 
