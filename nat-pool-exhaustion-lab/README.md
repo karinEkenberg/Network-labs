@@ -9,7 +9,7 @@ This lab simulates a Denial of Service (DoS) scenario caused by a misconfigured 
 network connectivity issues where internal users were intermittently blocked from accessing the internet, identify the
 bottleneck, and implement a scalable solution.
 
-## 🛠 Technologies
+## Technologies
 * Cisco IOS
 * Cisco Packet Tracer
 * Network Address Translation (NAT/PAT)
@@ -41,4 +41,5 @@ ip nat inside source list 1 pool INTERNET-POOL overload
   * Stress Test: Successfully initiated continuous pings (`ping -n 1000`) from all 10 PCs simultaneously.
   * Statistics: `show ip nat statistics` confirmed 0 misses.
   * Translation Table: `show ip nat translations` verified usage of Port Address Translation (multiple internal IPs mapped to the same global IP with different ports).
+
 
